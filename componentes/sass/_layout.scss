@@ -1,0 +1,109 @@
+#info_wrapper {
+	position: relative;
+	width: 920px;
+	height: 600px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: $lightgray;
+}
+
+.fordFiesta {
+	
+}
+
+div#info_cabezalho {
+	height: 28px;
+	width: 100%;
+	position: absolute;
+	top: 10px;
+	background: black;
+
+	h1{
+		color: $amarelo;
+		font-size: 1.2rem;
+		margin-left: 1rem;
+		line-height: 26px;
+	}
+
+	img{
+		float: right;
+		cursor: pointer;
+		margin-top: -29px;
+		margin-right: $margin-sides;
+	}
+}//info_cabezalho
+
+
+#info_titulos{
+	
+	font-family: $font-2;
+	left: $margin-sides;
+	position: absolute;
+	top: 50px;
+	color: white;
+	h1{
+		font-family: inherit;
+		font-size: 40px;
+		line-height: 38px;
+		width: 350px;
+	}
+	h2{
+		font-family: inherit;
+		font-size: 16px;
+		line-height: 19px;
+		width: 170px;
+		margin-top: 10px;
+	}
+}//info_titulos
+
+div#btn_comoFunciona {
+	position: absolute;
+	left: $margin-sides;
+	bottom: $margin-sides;
+	background: white;
+	height: 160px;
+	width: 160px;
+	@include border-radius(50%);
+	cursor: pointer;
+	h3{
+		font-family: $font-1;
+		font-size: 22px;
+		text-align: center;
+		margin-top: 33%;
+		pointer-events: none;
+	}
+}
+
+div#info_painelInferior{
+	position: absolute;
+	background: white;
+	height: 120px;
+	width: 90%;
+	right: 0;
+	bottom: $margin-sides;
+	div.animacao{
+		float: left;
+		width: 250px;
+		height: 120px;
+		background: black;
+	}
+	p{
+		float: left;
+		width: 280px;
+		margin: $margin-sides;
+		font-family: $font-3;
+		font-size: 16px;
+		line-height: 19px;
+	}
+	img{
+		float: left;
+	}
+}
+
+p#info_notaRodape {
+	position: absolute;
+	color: white;
+	bottom: $margin-sides/2;
+	right: $margin-sides;
+	font-size: 10px;
+}

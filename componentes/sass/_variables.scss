@@ -1,0 +1,28 @@
+@font-face {/*GothamBlack*/
+	font-family: 'GothamBlack';
+	src: url('../fonts/GothamBlack.eot');
+	src: local('../GothamBlack'), url('../fonts/GothamBlack.woff') format('woff'), url('../fonts/GothamBlack.ttf') format('truetype');
+}
+@font-face {/*GothamExLight*/
+	font-family: 'GothamExLight';
+	src: url('../fonts/GothamExLight.eot');
+	src: local('../GothamExLight'), url('../fonts/GothamExLight.woff') format('woff'), url('../fonts/GothamExLight.ttf') format('truetype');
+}
+@font-face {/*GothamMedium*/
+	font-family: 'GothamMedium';
+	src: url('../fonts/GothamMedium.eot');
+	src: local('../GothamMedium'), url('../fonts/GothamMedium.woff') format('woff'), url('../fonts/GothamMedium.ttf') format('truetype');
+}
+
+
+$lightgray      : #819090;
+$amarelo 		: rgb(255, 221, 0);
+
+
+$font-1: GothamBlack, Arial, serif;
+$font-2: GothamMedium, Arial, serif;
+$font-3: GothamExLight, Arial, serif;
+
+$default-border-radius: 15px;
+
+$margin-sides : 20px;

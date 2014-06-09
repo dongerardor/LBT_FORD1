@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+#{headings()} {
+	font-family: $font-1;
+	font-weight: normal;
+	//color: $darkgray;
+}
+
+#info_wrapper h1 {
+	font-size: 2.2rem;
+}
+
+#info_wrapper h2{
+	font-size: 1.5rem;
+	line-height: 100%;
+}
+
+#info_wrapper h3 {
+}
+
+#info_wrapper a {
+	&:hover{
+	}
+}
+
+#info_wrapper p{
+	font-family: Arial, Helvetica, _sans;
+}
