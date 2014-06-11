@@ -6,53 +6,111 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body> 
-
   <div id="info_wrapper">
-
     <img class="fordFiesta" id="fordFiesta" src="images/fordFiesta.jpg" alt="Novo Ford Fiesta">
     <img class="fordFiesta" id="fordFiestaBlueprint" src="images/fordFiesta_diapo.jpg" alt="Raio X do Novo Ford Fiesta">
 
     <div id="info_cabezalho">
       <h1>ADVANCE TRAC</h1>
-      <a href="http://g1.globo.com/carros/especial-publicitario/ford/tecnodrive/">
+      <a href="http://g1.globo.com/carros/especial-publicitario/ford/tecnodrive/" target="_parent">
       <img src="images/btn_home.png" alt="Home">
       </a>
     </div><!-- info_cabezalho -->
 
     <div id="info_titulos">
       <h1>CONTROLE DE ESTABILIDADE E TRAÇÃO</h1>
-      <h2>O AdvanceTrac é um pacote de tecnologia. Este sistema mantém o veículo na direção desejada, monitorando a sua velociadade, a posição do acelerador e o ângulo do volante.</h2>
+      <h2>O AdvanceTrac <br>é um pacote de <br>tecnologia. Este <br>sistema mantém <br>o veículo na <br>direção desejada, <br>monitorando a <br>sua velocidade, <br>a posição do <br>acelerador e o <br>ângulo do volante.</h2>
     </div><!-- titulos -->
+
+    <div id="pulsantesWrapper">
+      <div class="pulsantes"  id="pulsante_tela1">
+        <div class="pulsante pulsando" id="pulsante_1"></div>
+        <div class="pulsante pulsando" id="pulsante_2"></div>
+        <div class="pulsante pulsando" id="pulsante_3"></div>
+        <div class="pulsante pulsando" id="pulsante_4"></div>
+      </div>
+      <div class="pulsantes"  id="pulsante_tela2">
+        <div class="pulsante pulsando" id="pulsante_1"></div>
+        <div class="pulsante pulsando" id="pulsante_2"></div>
+        <div class="pulsante pulsando" id="pulsante_3"></div>
+        <div class="pulsante pulsando" id="pulsante_4"></div>
+      </div>
+      <div class="pulsantes"  id="pulsante_tela3">
+        <div class="pulsante pulsando" id="pulsante_1"></div>
+        <div class="pulsante pulsando" id="pulsante_2"></div>
+        <div class="pulsante pulsando" id="pulsante_3"></div>
+        <div class="pulsante pulsando" id="pulsante_4"></div>
+        <div class="pulsante pulsando" id="pulsante_5"></div>
+      </div>
+    </div>
+
+    <div id="info_painelInferior">
+      <section id="section1">
+        <img class="btn_anterior" src="images/btn_anterior.png" alt="Anterior">
+
+        <video id="animacao1" class="animacao" width="250" height="120">
+          <source src="images/animacoes/animacao1.mp4" type="video/mp4">
+          <source src="images/animacoes/animacao1.webm" type="video/webm; codecs=vp8,vorbis">
+          <source src="images/animacoes/animacao1.ogv"  type="video/ogg; codecs=theora,vorbis">
+          <img src="images/animacoes/animacao1.gif">
+        </video>
+        <p>Se uma das rodas derrapa, ele <br>controla o seu deslizamento por <br>meio do torque do motor e da <br>aplicação seletiva dos freios, <br>utilizando o módulo dos freios ABS.</p>
+        <img class="btn_seguinte" src="images/btn_seguinte.png" alt="Seguinte">
+      </section>
+
+      <section id="section2">
+        <img class="btn_anterior" src="images/btn_anterior.png" alt="Anterior">
+        <video id="animacao2" class="animacao" width="250" height="120">
+          <source src="images/animacoes/animacao2.mp4" type="video/mp4">
+          <source src="images/animacoes/animacao2.webm" type="video/webm; codecs=vp8,vorbis">
+          <source src="images/animacoes/animacao2.ogv"  type="video/ogg; codecs=theora,vorbis">
+          <img src="images/animacoes/animacao2.gif">
+        </video>
+        <p>O controle Eletrônico de Estabilidade <br>(ESC) avalia constantemente a velocidade <br>e a trajetória das rodas do veículo, aplicando <br>os freios individualmente em situação de <br>emergência, corrigindo a trajetória.</p>
+        <img class="btn_seguinte" src="images/btn_seguinte.png" alt="Seguinte">
+      </section>
+
+      <section id="section3">
+        <img class="btn_anterior" src="images/btn_anterior.png" alt="Anterior">
+        <video id="animacao3" class="animacao" width="250" height="120">
+          <source src="images/animacoes/animacao3.mp4" type="video/mp4">
+          <source src="images/animacoes/animacao3.webm" type="video/webm; codecs=vp8,vorbis">
+          <source src="images/animacoes/animacao3.ogv"  type="video/ogg; codecs=theora,vorbis">
+          <img src="images/animacoes/animacao3.gif">
+        </video>
+        <p>O Controle Eletrônico de Tração <br>(TCS) é um sistema que controla <br>a força distribuida nas rodas <br>dianteiras e traseiras e o aderência<br>com o solo na aceleração.</p>
+        <img class="btn_seguinte" id="btn_inicio" src="images/btn_inicio.png" alt="Início">
+      </section>
+    </div><!-- info_painelInferior -->
+
+
+    <div id="tooltipsWrapper">
+      <div id="tooltip1" class="tooltip">
+        <h4>TITLE HERE</h4>
+        <p>Ris etnono quisc etnono quiscimus aacimi, eaimus acimi, eaqui.</p>
+      </div>
+      <div id="tooltip2" class="tooltip">
+        <h4>TITLE HERE</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapien.</p>
+      </div>
+      <div id="tooltip3" class="tooltip">
+        <h4>TITLE HERE</h4>
+        <p>Adipisicing elit. Delectus, ut, quam ipsa odio iusto consequunt.</p>
+      </div>
+    </div> <!--tooltips-->
+
 
     <div id="btn_comoFunciona">
       <h3>COMO FUNCIONA</h3>
     </div>
 
-    <div id="info_painelInferior">
-      <div>
-        <div class="animacao">d</div>
-        <p>Se uma das rodas derrapa, ele controla o seu deslizamento por meio do torque do motor e da aplicação seletiva dos freios, utilizando o módulo dos freios ABS.</p>
-        <img src="images/btn_seguinte.png" alt="Seguinte">
-      </div>
-      <!-- <div>
-        <img src="images/btn_anterior.png" alt="Anterior">
-        <div class="animacao"></div>
-        <p>O controle Eletrônico de Estabilidade (ESC) avalia constantemente a velocidade e a trajetória das rodas do veículo, aplicando os freios individualmente em situação de emergência, corrigindo a trajetória.
-        </p>
-        <img src="images/btn_seguinte.png" alt="Seguinte">
-      </div>
-      <div>
-        <div class="animacao"></div>
-        <img src="images/btn_anterior.png" alt="Anterior">
-        <p>O Controle Eletrônico de Tração (TCS) é um sistema que controla a força distribuida nas rodas dianteiras e traseiras e o contato com o solo na aceleração.</p>
-        <img src="images/btn_inicio.png" alt="Início">
-      </div> -->
-    </div><!-- info_painelInferior -->
-
-    <p id="info_notaRodape">Esta tecnologia está disponível nos modelos NewFiesta XPTO 2014, Focus XPTO 2014 e Ranger XPTO 2014</p>
+    <p id="info_notaRodape">As versões que possuem AdvanceTrac são – New Fiesta Sedan, New Fiesta Hatch a partir do SE 1.6L, <br>Novo Focus Hatch a partir do S 1.6L Powershift, Novo Focus Sedan, Fusion, EcoSport a partir da Freestyle 1.6L e Edge.</p>
 
   </div><!-- fim info_wrapper -->
 
+  <script src="js/jquery-2.1.0.min.js"></script>
+  <!--<script src="js/TweenLite.min.js"></script>
+  <script src="js/TimelineLite.min.js"></script> -->
   <script src="js/ford1.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
 </body>

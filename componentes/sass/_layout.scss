@@ -1,14 +1,17 @@
 #info_wrapper {
 	position: relative;
 	width: 920px;
-	height: 600px;
+	height: 700px;
 	overflow: hidden;
 	margin: 0 auto;
 	background: $lightgray;
 }
 
-.fordFiesta {
-	
+#fordFiestaBlueprint {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
 }
 
 div#info_cabezalho {
@@ -56,15 +59,93 @@ div#info_cabezalho {
 	}
 }//info_titulos
 
+
+
+//pulsantes
+@-webkit-keyframes animacaoPulsante {
+  0% { opacity: .3; }
+  70% { opacity: .6; }
+  100% { opacity: .3; }
+}
+@-moz-keyframes animacaoPulsante {
+  0% { opacity: .3; }
+  70% { opacity: .6; }
+  100% { opacity: .3; }
+}
+@-o-keyframes animacaoPulsante {
+  0% { opacity: .3; }
+  70% { opacity: .6; }
+  100% { opacity: .3; }
+}
+@keyframes animacaoPulsante {
+  0% { opacity: .3; }
+  70% { opacity: .6; }
+  100% { opacity: .3; }
+}
+
+div#pulsantesWrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	.pulsante{
+		height: 40px;
+		width: 40px;
+		@include border-radius(50%);
+		border: 8px solid transparentize($lightgray, .5);
+		background: $amarelo;
+		cursor: pointer;
+
+		&.pulsando{
+			-webkit-animation: 	animacaoPulsante 1.5s infinite; /* Safari 4+ */
+			-moz-animation:    	animacaoPulsante 1.5s infinite; /* Fx 5+ */
+			-o-animation:      	animacaoPulsante 1.5s infinite; /* Opera 12+ */
+			animation: 			animacaoPulsante 1.5s infinite; 
+		}
+		&:hover{
+			opacity: .8 !important;
+		}
+	}
+	#pulsante_tela1, #pulsante_tela2, #pulsante_tela3{
+		display: none;
+	}
+	div.pulsante{position: absolute;}
+
+	div#pulsante_tela1 div#pulsante_1{top: 360px; left: 280px;}
+	div#pulsante_tela1 div#pulsante_2{top: 440px; left: 490px;}
+	div#pulsante_tela1 div#pulsante_3{top: 320px; left: 670px;}
+	div#pulsante_tela1 div#pulsante_4{top: 400px; left: 770px;}
+
+	div#pulsante_tela2 div#pulsante_1{top: 360px; left: 270px;}
+	div#pulsante_tela2 div#pulsante_2{top: 440px; left: 490px;}
+	div#pulsante_tela2 div#pulsante_3{top: 334px; left: 480px;}
+	div#pulsante_tela2 div#pulsante_4{top: 400px; left: 770px;}
+	
+	div#pulsante_tela3 div#pulsante_1{top: 400px; left: 220px;}
+	div#pulsante_tela3 div#pulsante_2{top: 500px; left: 450px;}
+	div#pulsante_tela3 div#pulsante_3{top: 350px; left: 530px;}
+	div#pulsante_tela3 div#pulsante_4{top: 250px; left: 636px;}
+	div#pulsante_tela3 div#pulsante_5{top: 450px; left: 810px;}
+}
+
+
+
+
+
+
+
+
+
 div#btn_comoFunciona {
 	position: absolute;
+	z-index:101;
 	left: $margin-sides;
 	bottom: $margin-sides;
 	background: white;
 	height: 160px;
 	width: 160px;
 	@include border-radius(50%);
-	cursor: pointer;
+	cursor: pointer; 
 	h3{
 		font-family: $font-1;
 		font-size: 22px;
@@ -75,35 +156,72 @@ div#btn_comoFunciona {
 }
 
 div#info_painelInferior{
+	z-index:100;
 	position: absolute;
 	background: white;
 	height: 120px;
 	width: 90%;
 	right: 0;
 	bottom: $margin-sides;
-	div.animacao{
-		float: left;
-		width: 250px;
-		height: 120px;
-		background: black;
-	}
-	p{
-		float: left;
-		width: 280px;
-		margin: $margin-sides;
-		font-family: $font-3;
-		font-size: 16px;
-		line-height: 19px;
-	}
-	img{
-		float: left;
+	display: none;
+	section{
+		padding-left: 90px;
+		img{
+			float: left;
+			margin: 42px 10px 0 10px;
+			cursor: pointer;
+		}//img
+		video.animacao{
+			float: left;
+			background: black;
+		}//animacao
+		p{
+			float: left;
+			width: 350px;
+			margin: $margin-sides/2;
+			font-family: $font-3;
+			font-size: 16px;
+			line-height: 20px;
+		}//p
+		
+	}//section
+	#section1 img.btn_anterior{
+		opacity: 0;
+		pointer-events: none;
+	};
+	#section2, #section3{
+		display: none;
 	}
 }
 
 p#info_notaRodape {
 	position: absolute;
 	color: white;
-	bottom: $margin-sides/2;
+	bottom: $margin-sides;
 	right: $margin-sides;
 	font-size: 10px;
+	text-align: right;
+}
+
+//tooltips
+div#tooltipsWrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	.tooltip{
+		position: absolute;
+		display: none;
+		top: 80px;
+		left: 760px;
+		color: white;
+		width: 120px;
+		h4{
+			font-family: $font-1;
+		}
+		p{
+			font-family: $font-2;
+			font-size: .8em;
+			line-height: 1.3em;
+		}
+	}
 }

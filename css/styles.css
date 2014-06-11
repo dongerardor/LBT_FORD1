@@ -91,45 +91,52 @@ h1, h2, h3, h4, h5, h6 {
 #info_wrapper {
   position: relative;
   width: 920px;
-  height: 600px;
+  height: 700px;
   overflow: hidden;
   margin: 0 auto;
   background: #819090; }
 
-/* line 14, ../componentes/sass/_layout.scss */
+/* line 10, ../componentes/sass/_layout.scss */
+#fordFiestaBlueprint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; }
+
+/* line 17, ../componentes/sass/_layout.scss */
 div#info_cabezalho {
   height: 28px;
   width: 100%;
   position: absolute;
   top: 10px;
   background: black; }
-  /* line 21, ../componentes/sass/_layout.scss */
+  /* line 24, ../componentes/sass/_layout.scss */
   div#info_cabezalho h1 {
     color: #ffdd00;
     font-size: 1.2rem;
     margin-left: 1rem;
     line-height: 26px; }
-  /* line 28, ../componentes/sass/_layout.scss */
+  /* line 31, ../componentes/sass/_layout.scss */
   div#info_cabezalho img {
     float: right;
     cursor: pointer;
     margin-top: -29px;
     margin-right: 20px; }
 
-/* line 37, ../componentes/sass/_layout.scss */
+/* line 40, ../componentes/sass/_layout.scss */
 #info_titulos {
   font-family: GothamMedium, Arial, serif;
   left: 20px;
   position: absolute;
   top: 50px;
   color: white; }
-  /* line 44, ../componentes/sass/_layout.scss */
+  /* line 47, ../componentes/sass/_layout.scss */
   #info_titulos h1 {
     font-family: inherit;
     font-size: 40px;
     line-height: 38px;
     width: 350px; }
-  /* line 50, ../componentes/sass/_layout.scss */
+  /* line 53, ../componentes/sass/_layout.scss */
   #info_titulos h2 {
     font-family: inherit;
     font-size: 16px;
@@ -137,9 +144,144 @@ div#info_cabezalho {
     width: 170px;
     margin-top: 10px; }
 
-/* line 59, ../componentes/sass/_layout.scss */
+@-webkit-keyframes animacaoPulsante {
+  /* line 66, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: .3; }
+
+  /* line 67, ../componentes/sass/_layout.scss */
+  70% {
+    opacity: .6; }
+
+  /* line 68, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: .3; } }
+@-moz-keyframes animacaoPulsante {
+  /* line 71, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: .3; }
+
+  /* line 72, ../componentes/sass/_layout.scss */
+  70% {
+    opacity: .6; }
+
+  /* line 73, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: .3; } }
+@-o-keyframes animacaoPulsante {
+  /* line 76, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: .3; }
+
+  /* line 77, ../componentes/sass/_layout.scss */
+  70% {
+    opacity: .6; }
+
+  /* line 78, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: .3; } }
+@keyframes animacaoPulsante {
+  /* line 81, ../componentes/sass/_layout.scss */
+  0% {
+    opacity: .3; }
+
+  /* line 82, ../componentes/sass/_layout.scss */
+  70% {
+    opacity: .6; }
+
+  /* line 83, ../componentes/sass/_layout.scss */
+  100% {
+    opacity: .3; } }
+/* line 86, ../componentes/sass/_layout.scss */
+div#pulsantesWrapper {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  /* line 91, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper .pulsante {
+    height: 40px;
+    width: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 8px solid rgba(129, 144, 144, 0.5);
+    background: #ffdd00;
+    cursor: pointer; }
+    /* line 99, ../componentes/sass/_layout.scss */
+    div#pulsantesWrapper .pulsante.pulsando {
+      -webkit-animation: animacaoPulsante 1.5s infinite;
+      /* Safari 4+ */
+      -moz-animation: animacaoPulsante 1.5s infinite;
+      /* Fx 5+ */
+      -o-animation: animacaoPulsante 1.5s infinite;
+      /* Opera 12+ */
+      animation: animacaoPulsante 1.5s infinite; }
+    /* line 105, ../componentes/sass/_layout.scss */
+    div#pulsantesWrapper .pulsante:hover {
+      opacity: .8 !important; }
+  /* line 109, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper #pulsante_tela1, div#pulsantesWrapper #pulsante_tela2, div#pulsantesWrapper #pulsante_tela3 {
+    display: none; }
+  /* line 112, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div.pulsante {
+    position: absolute; }
+  /* line 114, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela1 div#pulsante_1 {
+    top: 360px;
+    left: 280px; }
+  /* line 115, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela1 div#pulsante_2 {
+    top: 440px;
+    left: 490px; }
+  /* line 116, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela1 div#pulsante_3 {
+    top: 320px;
+    left: 670px; }
+  /* line 117, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela1 div#pulsante_4 {
+    top: 400px;
+    left: 770px; }
+  /* line 119, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela2 div#pulsante_1 {
+    top: 360px;
+    left: 270px; }
+  /* line 120, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela2 div#pulsante_2 {
+    top: 440px;
+    left: 490px; }
+  /* line 121, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela2 div#pulsante_3 {
+    top: 334px;
+    left: 480px; }
+  /* line 122, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela2 div#pulsante_4 {
+    top: 400px;
+    left: 770px; }
+  /* line 124, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela3 div#pulsante_1 {
+    top: 400px;
+    left: 220px; }
+  /* line 125, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela3 div#pulsante_2 {
+    top: 500px;
+    left: 450px; }
+  /* line 126, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela3 div#pulsante_3 {
+    top: 350px;
+    left: 530px; }
+  /* line 127, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela3 div#pulsante_4 {
+    top: 250px;
+    left: 636px; }
+  /* line 128, ../componentes/sass/_layout.scss */
+  div#pulsantesWrapper div#pulsante_tela3 div#pulsante_5 {
+    top: 450px;
+    left: 810px; }
+
+/* line 139, ../componentes/sass/_layout.scss */
 div#btn_comoFunciona {
   position: absolute;
+  z-index: 101;
   left: 20px;
   bottom: 20px;
   background: white;
@@ -149,7 +291,7 @@ div#btn_comoFunciona {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer; }
-  /* line 68, ../componentes/sass/_layout.scss */
+  /* line 149, ../componentes/sass/_layout.scss */
   div#btn_comoFunciona h3 {
     font-family: GothamBlack, Arial, serif;
     font-size: 22px;
@@ -157,36 +299,71 @@ div#btn_comoFunciona {
     margin-top: 33%;
     pointer-events: none; }
 
-/* line 77, ../componentes/sass/_layout.scss */
+/* line 158, ../componentes/sass/_layout.scss */
 div#info_painelInferior {
+  z-index: 100;
   position: absolute;
   background: white;
   height: 120px;
   width: 90%;
   right: 0;
-  bottom: 20px; }
-  /* line 84, ../componentes/sass/_layout.scss */
-  div#info_painelInferior div.animacao {
-    float: left;
-    width: 250px;
-    height: 120px;
-    background: black; }
-  /* line 90, ../componentes/sass/_layout.scss */
-  div#info_painelInferior p {
-    float: left;
-    width: 280px;
-    margin: 20px;
-    font-family: GothamExLight, Arial, serif;
-    font-size: 16px;
-    line-height: 19px; }
-  /* line 98, ../componentes/sass/_layout.scss */
-  div#info_painelInferior img {
-    float: left; }
+  bottom: 20px;
+  display: none; }
+  /* line 167, ../componentes/sass/_layout.scss */
+  div#info_painelInferior section {
+    padding-left: 90px; }
+    /* line 169, ../componentes/sass/_layout.scss */
+    div#info_painelInferior section img {
+      float: left;
+      margin: 42px 10px 0 10px;
+      cursor: pointer; }
+    /* line 174, ../componentes/sass/_layout.scss */
+    div#info_painelInferior section video.animacao {
+      float: left;
+      background: black; }
+    /* line 178, ../componentes/sass/_layout.scss */
+    div#info_painelInferior section p {
+      float: left;
+      width: 350px;
+      margin: 10px;
+      font-family: GothamExLight, Arial, serif;
+      font-size: 16px;
+      line-height: 20px; }
+  /* line 188, ../componentes/sass/_layout.scss */
+  div#info_painelInferior #section1 img.btn_anterior {
+    opacity: 0;
+    pointer-events: none; }
+  /* line 192, ../componentes/sass/_layout.scss */
+  div#info_painelInferior #section2, div#info_painelInferior #section3 {
+    display: none; }
 
-/* line 103, ../componentes/sass/_layout.scss */
+/* line 197, ../componentes/sass/_layout.scss */
 p#info_notaRodape {
   position: absolute;
   color: white;
-  bottom: 10px;
+  bottom: 20px;
   right: 20px;
-  font-size: 10px; }
+  font-size: 10px;
+  text-align: right; }
+
+/* line 207, ../componentes/sass/_layout.scss */
+div#tooltipsWrapper {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  /* line 211, ../componentes/sass/_layout.scss */
+  div#tooltipsWrapper .tooltip {
+    position: absolute;
+    display: none;
+    top: 80px;
+    left: 760px;
+    color: white;
+    width: 120px; }
+    /* line 218, ../componentes/sass/_layout.scss */
+    div#tooltipsWrapper .tooltip h4 {
+      font-family: GothamBlack, Arial, serif; }
+    /* line 221, ../componentes/sass/_layout.scss */
+    div#tooltipsWrapper .tooltip p {
+      font-family: GothamMedium, Arial, serif;
+      font-size: .8em;
+      line-height: 1.3em; }
