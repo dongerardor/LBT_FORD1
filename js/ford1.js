@@ -9,6 +9,7 @@ $(function() {
 	var pulsarOpacidad00 	= .2;
 	var pulsarOpacidad01 	= .6;
 	var mouseoverPulsante  	= false;
+	var iOS 				= ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
     $('.pulsante').click(function(evt){
     	showTooltip();
@@ -31,21 +32,32 @@ $(function() {
   		if ($(this).attr("id") == "btn_inicio"){
   			blueprintOn = false;
   			blueprint();
-	  		resetRodape();
+	  		rodapeOff();
   		}else{
 	  		nav_painelInferior("next");
   		}
   	})
 
-
+  	$("#animacao1").click(function(){
+   		document.getElementById('animacao1').play();
+	});
+	$("#animacao2").click(function(){
+   		document.getElementById('animacao2').play();
+	});
+	$("#animacao3").click(function(){
+   		document.getElementById('animacao3').play();
+	});
 
 
 ///////////////////////////////////////////////////
-
+	
+	if (!iOS){
+		$("video").attr("poster", "images/animacoes/posterVideo.png");
+	}
 
 	function initAll(){
 		blueprint();
-		resetRodape();
+		rodapeOff();
 		activateRodape();
 	}
 
@@ -99,7 +111,7 @@ $(function() {
 				$('.pulsantes').css("display", "none");
 				setTimeout(function(){
 					if (!blueprintOn){
-						resetRodape();
+						rodapeOff();
 					}else{
 						$('.pulsantes').css("display", "none");
 						$(pulsanteAtivo).css("display", "block");
@@ -109,30 +121,27 @@ $(function() {
 		}
 	}
 
-	function resetRodape(){
+	function rodapeOff(){
 		rodapeAtivo = 0;
 		$("#info_painelInferior").fadeOut();
-		blueprint(false);
-		adminVideo(false);
 		$(".pulsantes").hide();
 		$("section").hide();
 		$(".tooltip").hide();
 	}
 
 	function adminVideo(video){
-		var video1 = document.getElementById('animacao1');
-		var video2 = document.getElementById('animacao2');
-		var video3 = document.getElementById('animacao3');
-		var videos = [video1, video2, video3];
-		for (var i=0; i<videos.length; i++){
-			videos[i].pause();
-			videos[i].currentTime = 0;
-		}		
+		if (!iOS){
+			document.getElementById('animacao1').pause()
+			document.getElementById('animacao1').currentTime = 0;
+			document.getElementById('animacao2').pause()
+			document.getElementById('animacao2').currentTime = 0;
+			document.getElementById('animacao3').pause()
+			document.getElementById('animacao3').currentTime = 0;
 
-		var videoAtual = document.getElementById('animacao' + (rodapeAtivo + 1));
-		if (video){
-			videoAtual.loop = true;
-			videoAtual.play();
+			if (video){
+				var videoAtual = document.getElementById('animacao' + (rodapeAtivo + 1));
+				videoAtual.play();
+			}
 		}
 	}
 
@@ -142,9 +151,4 @@ $(function() {
 			$("#" + idTooltip).fadeIn("slow");
 		}
 	}
-
-
-
-
 });
-

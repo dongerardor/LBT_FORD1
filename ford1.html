@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
   <title>Ford</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -18,8 +19,8 @@
     </div><!-- info_cabezalho -->
 
     <div id="info_titulos">
-      <h1>CONTROLE DE ESTABILIDADE E TRAÇÃO</h1>
-      <h2>O AdvanceTrac <br>é um pacote de <br>tecnologia. Este <br>sistema mantém <br>o veículo na <br>direção desejada, <br>monitorando a <br>sua velocidade, <br>a posição do <br>acelerador e o <br>ângulo do volante.</h2>
+      <h1>CONTROLE<br>DE ESTABILIDADE<br>E TRAÇÃO</h1>
+      <h2>O AdvanceTrac<br>é um pacote de<br>tecnologia. Este<br>sistema mantém<br>o veículo na<br>direção desejada,<br>monitorando a<br>sua velocidade,<br>a posição do<br>acelerador e o<br>ângulo do volante.</h2>
     </div><!-- titulos -->
 
     <div id="pulsantesWrapper">
@@ -48,7 +49,7 @@
       <section id="section1">
         <img class="btn_anterior" src="images/btn_anterior.png" alt="Anterior">
 
-        <video id="animacao1" class="animacao" width="250" height="120">
+        <video id="animacao1" class="animacao" width="250" height="120" poster="images/animacoes/posterVideo_ios.png" loop>
           <source src="images/animacoes/animacao1.mp4" type="video/mp4">
           <source src="images/animacoes/animacao1.webm" type="video/webm; codecs=vp8,vorbis">
           <source src="images/animacoes/animacao1.ogv"  type="video/ogg; codecs=theora,vorbis">
@@ -60,7 +61,7 @@
 
       <section id="section2">
         <img class="btn_anterior" src="images/btn_anterior.png" alt="Anterior">
-        <video id="animacao2" class="animacao" width="250" height="120">
+        <video id="animacao2" class="animacao" width="250" height="120" poster="images/animacoes/posterVideo_ios.png" loop>
           <source src="images/animacoes/animacao2.mp4" type="video/mp4">
           <source src="images/animacoes/animacao2.webm" type="video/webm; codecs=vp8,vorbis">
           <source src="images/animacoes/animacao2.ogv"  type="video/ogg; codecs=theora,vorbis">
@@ -72,7 +73,7 @@
 
       <section id="section3">
         <img class="btn_anterior" src="images/btn_anterior.png" alt="Anterior">
-        <video id="animacao3" class="animacao" width="250" height="120">
+        <video id="animacao3" class="animacao" width="250" height="120" poster="images/animacoes/posterVideo_ios.png" loop>
           <source src="images/animacoes/animacao3.mp4" type="video/mp4">
           <source src="images/animacoes/animacao3.webm" type="video/webm; codecs=vp8,vorbis">
           <source src="images/animacoes/animacao3.ogv"  type="video/ogg; codecs=theora,vorbis">
@@ -84,18 +85,20 @@
     </div><!-- info_painelInferior -->
 
 
+
+
     <div id="tooltipsWrapper">
       <div id="tooltip1" class="tooltip">
-        <h4>TITLE HERE</h4>
-        <p>Ris etnono quisc etnono quiscimus aacimi, eaimus acimi, eaqui.</p>
+        <h4>CONTROLE</h4>
+        <p>O sistema aciona uma<br>função de maior controle<br>de tração, reduzindo<br>o torque do motor<br>se as rodas girarem<br>em falso quando<br>o motorista acelera</p>
       </div>
       <div id="tooltip2" class="tooltip">
-        <h4>TITLE HERE</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapien.</p>
+        <h4>ESTABILIDADE</h4>
+        <p>A aplicação individual<br>dos freios melhora a saída<br>em estradas escorregadias<br>ou superfícies soltas e<br>garante maior conforto ao<br>limitar o giro em falso das<br>rodas em curvas fechadas</p>
       </div>
       <div id="tooltip3" class="tooltip">
-        <h4>TITLE HERE</h4>
-        <p>Adipisicing elit. Delectus, ut, quam ipsa odio iusto consequunt.</p>
+        <h4>ACIONAMENTO</h4>
+        <p>O sistema é ativado<br>automaticamente sempre<br>que a ignição é ligada,<br>mas pode ser desligado<br>e ligado manualmente<br>a qualquer momento<br>pelo motorista</p>
       </div>
     </div> <!--tooltips-->
 
@@ -109,9 +112,7 @@
   </div><!-- fim info_wrapper -->
 
   <script src="js/jquery-2.1.0.min.js"></script>
-  <!--<script src="js/TweenLite.min.js"></script>
-  <script src="js/TimelineLite.min.js"></script> -->
   <script src="js/ford1.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+
 </body>
 </html>

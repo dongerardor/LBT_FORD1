@@ -135,7 +135,7 @@ div#info_cabezalho {
     font-family: inherit;
     font-size: 40px;
     line-height: 38px;
-    width: 350px; }
+    width: 400px; }
   /* line 53, ../componentes/sass/_layout.scss */
   #info_titulos h2 {
     font-family: inherit;
@@ -355,14 +355,15 @@ div#tooltipsWrapper {
   div#tooltipsWrapper .tooltip {
     position: absolute;
     display: none;
-    top: 80px;
-    left: 760px;
+    top: 70px;
+    left: 700px;
     color: white;
-    width: 120px; }
-    /* line 218, ../componentes/sass/_layout.scss */
+    width: 200px;
+    text-align: right; }
+    /* line 219, ../componentes/sass/_layout.scss */
     div#tooltipsWrapper .tooltip h4 {
       font-family: GothamBlack, Arial, serif; }
-    /* line 221, ../componentes/sass/_layout.scss */
+    /* line 222, ../componentes/sass/_layout.scss */
     div#tooltipsWrapper .tooltip p {
       font-family: GothamMedium, Arial, serif;
       font-size: .8em;
